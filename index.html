@@ -37,6 +37,8 @@
   .btn .arrow{display:inline-block;transition:transform .2s ease}
   .btn:hover .arrow{transform:translateX(4px)}
   .btn.btn-sm{padding:9px 14px;font-size:13.5px;border-radius:8px;gap:8px}
+  .top-actions{display:inline-flex;align-items:center;gap:10px}
+  @media (max-width:600px){.top-actions .btn-sm.secondary{display:none}}
 
   /* Top bar */
   header.top{position:sticky;top:0;z-index:30;background:rgba(10,16,32,.85);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
@@ -257,7 +259,10 @@
       <span class="x">×</span>
       <span class="gdit-logo" aria-label="GDIT"><img src="https://images.ctfassets.net/szx3os6exj55/5cf7WvmX1dxq03hXnlKBer/90999b9c690993129ca1fc5a1c7faf54/gdit-sht-lg-200x64px.png" alt="GDIT"></span>
     </div>
-    <a class="btn btn-sm" href="https://www.oreilly.com/online-learning/government.html" target="_blank" rel="noopener">O'Reilly for Government <span class="arrow">→</span></a>
+    <div class="top-actions">
+      <a class="btn btn-sm secondary" href="https://www.oreilly.com/online-learning/government.html" target="_blank" rel="noopener">O'Reilly for Government <span class="arrow">→</span></a>
+      <a class="btn btn-sm" href="http://calendly.com/jreid-oreilly" target="_blank" rel="noopener">Get in touch <span class="arrow">→</span></a>
+    </div>
   </div>
 </header>
 
